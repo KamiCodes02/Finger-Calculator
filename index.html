@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI-Driven Finger Calculator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <video id="webcam" width="640" height="480" autoplay muted playsinline></video>
+    <canvas id="canvas" width="640" height="480"></canvas>
+
+    <div id="panel">
+        <h2>AI Finger Calculator</h2>
+        <div id="result">Waiting...</div>
+        <div class="controls">
+            <button onclick="setOperation('+')">Addition (+)</button>
+            <button onclick="setOperation('-')">Subtraction (-)</button>
+            <button onclick="setOperation('*')">Multiplication (×)</button>
+            <button onclick="setOperation('/')">Division (÷)</button>
+            <button onclick="setOperation('%')">Modulo (%)</button>
+            <button onclick="setOperation('pow')">Power (^)</button>
+        </div>
+        <p class="hint">Hold up fingers on both hands. Left hand = first number, right hand = second number.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
