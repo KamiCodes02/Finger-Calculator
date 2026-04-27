@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+}
+
+canvas, video {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#panel {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 330px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 14px;
+    border-radius: 10px;
+}
+
+#panel h2 {
+    margin: 0 0 8px 0;
+    font-size: 22px;
+}
+
+#result {
+    font-size: 20px;
+    white-space: pre-line;
+    margin-bottom: 12px;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
+
+button {
+    padding: 9px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    background: #444;
+}
+
+.hint {
+    font-size: 13px;
+    margin-bottom: 0;
+}
